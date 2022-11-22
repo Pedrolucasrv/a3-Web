@@ -93,17 +93,3 @@ export default function Home() {
   )
 }
 
-// export const getServerSideProps = async (context) => {
-    
-//   const res = await fetch("http://localhost:3000/api/notes");
-//   const notes = await res.json();
-  
-
-//   return {
-//     props: {
-//       notes
-
-//     },
-  
-//   };
-// } 
