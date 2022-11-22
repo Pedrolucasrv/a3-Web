@@ -37,8 +37,7 @@ export default function Home() {
 
   useEffect(() => {
     axios.get("/api/notes").then((res)=> {
-      notes = res.data
-      
+    
       setNotes(res.data)
 
     })
