@@ -93,7 +93,7 @@ export default function Home({notes}) {
   )
 }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
     
   const res = await fetch("http://localhost:3000/api/notes");
   const notes = await res.json();
