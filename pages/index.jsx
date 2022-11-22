@@ -11,10 +11,10 @@ import axios from "axios";
 
 
 
-export default function Home({notes}) {
+export default function Home() {
   const [ modalAdd , setModalAdd ] = useState(false)
   const [ count , setCount ] = useState(0)
-  const [ notesArr , setNotes ] = useState(notes)
+  const [ notesArr , setNotes ] = useState([])
   const notifyDelete = () => toast.success("Nota excluida com sucesso!");
 
   function deleteNote(id){
@@ -93,17 +93,17 @@ export default function Home({notes}) {
   )
 }
 
-export const getServerSideProps = async (context) => {
+// export const getServerSideProps = async (context) => {
     
-  const res = await fetch("http://localhost:3000/api/notes");
-  const notes = await res.json();
+//   const res = await fetch("http://localhost:3000/api/notes");
+//   const notes = await res.json();
   
 
-  return {
-    props: {
-      notes
+//   return {
+//     props: {
+//       notes
 
-    },
+//     },
   
-  };
-} 
+//   };
+// } 
