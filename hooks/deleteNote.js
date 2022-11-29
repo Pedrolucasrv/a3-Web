@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function deleteNote(id){
 
-
     axios({
         method: 'delete',
         url: '/api/notes',
